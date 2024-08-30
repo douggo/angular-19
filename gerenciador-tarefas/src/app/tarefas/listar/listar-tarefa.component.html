@@ -19,7 +19,7 @@
         <input type="checkbox" [value]="tarefa.id" [checked]="tarefa.concluida">
       </td>
       <td class="text-center" style="width: 200px">
-        <a title="Editar" alt="Editar" class="btn btn-sm btn-info me-2">
+        <a title="Editar" alt="Editar" class="btn btn-sm btn-info me-2" [routerLink]="['/tarefas/editar', tarefa.id]">
           <i class="bi bi-pencil" aria-hidden="true"></i> Editar
         </a>
         <a href="#" title="Remover" alt="Remover" class="btn btn-sm btn-danger">
