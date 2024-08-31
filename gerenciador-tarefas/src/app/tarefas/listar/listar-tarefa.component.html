@@ -12,15 +12,15 @@
       </th>
     </tr>
     <tr *ngFor="let tarefa of tarefas">
-      <td [class.bg-light]="tarefa.concluida">
+      <td [tarefaConcluida]="tarefa.concluida"
+      [class.bg-light]="tarefa.concluida">
         {{ tarefa.nome }}
       </td>
       <td style="width: 70px" class="text-center">
         <input type="checkbox" 
           [value]="tarefa.id" 
           [checked]="tarefa.concluida" 
-          (click)="alterarStatus(tarefa)" 
-          [tarefaConcluida]="tarefa.concluida">
+          (click)="alterarStatus(tarefa)">
       </td>
       <td class="text-center" style="width: 200px">
         <a title="Editar" alt="Editar" class="btn btn-sm btn-info me-2" [routerLink]="['/tarefas/editar', tarefa.id]">

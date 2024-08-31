@@ -10,5 +10,6 @@
 - ng serve
 - ng g module tarefas
 - ng g service tarefas/shared/tarefa
+- ng g directive tarefas/shared/tarefa-concluida
 
 - ng generate config karma
