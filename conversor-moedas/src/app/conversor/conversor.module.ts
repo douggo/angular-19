@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ConversorComponent } from './components/conversor.component';
 import { ConversorService, MoedaService } from './shared/services';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     ConversorComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     ConversorComponent
