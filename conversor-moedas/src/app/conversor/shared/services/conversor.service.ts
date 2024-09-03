@@ -5,7 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ConversorService {
 
-  private readonly BASE_URL = "http://data.fixer.io/api/latest?access_key=eba7130a5b2d720ce43eb5fcddd47cc3";
+  private readonly KEY = "0138904fb6412bdba3aafede67e6c015";
+  private readonly BASE_URL = "http://data.fixer.io/api/latest?access_key=".concat(this.KEY);
 
   constructor(private http: HttpClient) {}
 
