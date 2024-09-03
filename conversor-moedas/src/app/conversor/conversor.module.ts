@@ -5,11 +5,13 @@ import { ConversorComponent } from './components/conversor.component';
 import { ConversorService, MoedaService } from './shared/services';
 import { FormsModule } from '@angular/forms';
 import { NumeroDirective } from './directives';
+import { ModalCotacaoComponent } from './utils';
 
 @NgModule({
   declarations: [
     ConversorComponent,
-    NumeroDirective
+    NumeroDirective,
+    ModalCotacaoComponent
   ],
   imports: [
     CommonModule,
